@@ -1,19 +1,4 @@
-use solana_program::{
-    account_info::AccountInfo,
-    entrypoint,
-    entrypoint::ProgramResult,
-    pubkey::Pubkey,
-    msg,
-};
+//! An ERC20-like Quantic Token program for the Solana blockchain
 
-entrypoint!(process_instruction);
-
-fn process_instruction(
-    _program_id: &Pubkey,
-    _accounts: &[AccountInfo],
-    _instruction_data: &[u8],
-) -> ProgramResult {
-    msg!("Hello! This is Quantix42's frist version!");
-
-    Ok(())
-}
+#![cfg(not(feature = "no-entrypoint"))]
+mod entrypoint;
