@@ -15,12 +15,13 @@ shift and bring value to people.
 ```shell
 # clone it
 git clone https://github.com/Taiwing/quantix42
-```
 
-1. Install Solana CLI
-2. Run a local validator `solana-test-validator`
-3. Configure new wallet and airdrop some SOL `solana config set -k ~/.config/solana/id.json && solana airdrop 2`
-4. Deploy the program `solana program deploy ./target/deploy/quantix42.so`
+# run a local validator
+solana-test-validator -r
+
+# deploy quantix program
+./deployment/deploy.bash
+```
 
 ## Usage
 
