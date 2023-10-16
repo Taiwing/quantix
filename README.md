@@ -16,7 +16,7 @@ shift and bring value to people.
 # clone it
 git clone https://github.com/Taiwing/quantix42
 
-# run a local validator
+# run a local validator (if not using a remote like devnet)
 solana-test-validator -r
 
 # deploy quantix program
