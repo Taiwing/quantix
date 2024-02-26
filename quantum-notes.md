@@ -67,3 +67,12 @@ Hilbert Space ? This is for the initialization process, where the initioal qbits
 are given values (that do not give information about the result!!!). I Dont know
 what that is.
 outcomes. From there we can make some interpretations.
+
+## 3. Axioms of quantum theory
+
+Hilbert Space: Vector space with inner product (H)
+
+State: Vector in hilbert space |wtf> E H also it must be a unit vector (or
+normalized, whatever that means so something like || |wtf> || = 1)
+
+### TODO: did not understand everything, will have to come back to this
