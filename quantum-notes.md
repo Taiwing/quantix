@@ -29,8 +29,6 @@ Communication:
 
 ## 2. Simple Quantum Experiment
 
-### Definitions
-
 - Initial State: starting pysical state of the system
 - Dynamics: evolution of the system in time
 - Final State: resulting state when the given time has passed
@@ -48,7 +46,7 @@ space:
 	probabilities. There are "detectors" that can record certain events and the
 	dynamics tell us the probabilities of each of them to do so. If there are
 	two detectors, then we have two probabilities: P0 and P1.
-	state -> dynamics -> measurement
+	state -> dynamics -> measurement -> observable
 
 expectation of function f with respect to P: <f>P = Ei fi pi (observable)
 
