@@ -72,8 +72,11 @@ solana config set --keypair ${WALLET_FILE}
 
 ########################### BUILD AND DEPLOY PROGRAM ###########################
 
+# go quantum
+cd quantum/
+
 # build program
 cargo build-bpf
 
 # deploy program
-solana program deploy ./target/deploy/quantix.so
+solana program deploy ./target/deploy/quantum.so

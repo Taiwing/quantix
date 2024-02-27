@@ -1,5 +1,5 @@
 [package]
-name = "quantix"
+name = "quantum"
 version = "0.1.0"
 edition = "2021"
 
@@ -7,7 +7,7 @@ edition = "2021"
 solana-program = "1.16.13"
 
 [lib]
-name = "quantix"
+name = "quantum"
 crate-type = ["cdylib", "lib"]
 
 [features]

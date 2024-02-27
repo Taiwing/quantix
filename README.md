@@ -19,7 +19,7 @@ git clone https://github.com/Taiwing/quantix
 # run a local validator (if not using a remote like devnet)
 solana-test-validator -r
 
-# deploy quantix program
+# deploy quantix token
 ./deploy.bash
 ```
 
