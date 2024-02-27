@@ -20,7 +20,7 @@ git clone https://github.com/Taiwing/quantix
 solana-test-validator -r
 
 # deploy quantix program
-./deployment/deploy.bash
+./deploy.bash
 ```
 
 ## Usage

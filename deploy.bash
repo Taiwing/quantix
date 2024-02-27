@@ -72,8 +72,6 @@ solana config set --keypair ${WALLET_FILE}
 
 ########################### BUILD AND DEPLOY PROGRAM ###########################
 
-cd code/
-
 # build program
 cargo build-bpf
 
