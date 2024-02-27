@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-################################### SETUP ######################################
+###############################################################################
+# Setup
+###############################################################################
 
 # go to repo root
 cd $(git rev-parse --show-toplevel)
@@ -33,7 +35,9 @@ fi
 set -e
 set -x
 
-############################## CONFIGURE SOLANA ################################
+###############################################################################
+# Configure Solana
+###############################################################################
 
 # set solana network
 case "${NETWORK}" in
@@ -60,9 +64,7 @@ case "${NETWORK}" in
 esac
 
 # configure new wallet if needed
-if [ ! -f ${WALLET_FILE} ]; then
-  solana-keygen new --outfile ${WALLET_FILE}
-fi
+[ ! -f ${WALLET_FILE} ] && solana-keygen new --outfile ${WALLET_FILE}
 
 # set wallet as default
 solana config set --keypair ${WALLET_FILE}
@@ -70,13 +72,20 @@ solana config set --keypair ${WALLET_FILE}
 # get some lamports
 [ "${NETWORK}" != "mainnet" ] && solana airdrop 2
 
-########################### BUILD AND DEPLOY PROGRAM ###########################
+###############################################################################
+# Deploy Quantix
+###############################################################################
 
-# go quantum
-cd quantum/
+# Token-2022 program id
+TOKEN_PROGRAM_ID="TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb"
 
-# build program
-cargo build-bpf
+spl-token --program-id ${TOKEN_PROGRAM_ID} create-token
 
-# deploy program
-solana program deploy ./target/deploy/quantum.so
+## go quantum
+#cd quantum/
+#
+## build program
+#cargo build-bpf
+#
+## deploy program
+#solana program deploy ./target/deploy/quantum.so
