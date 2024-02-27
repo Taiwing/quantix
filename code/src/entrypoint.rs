@@ -15,7 +15,7 @@ fn process_instruction(
     _accounts: &[AccountInfo],
     _instruction_data: &[u8],
 ) -> ProgramResult {
-    msg!("Hello! This is Quantix42's second version!");
+    msg!("Hello! This is Quantix's second version!");
 
     Ok(())
 }
