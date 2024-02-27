@@ -78,4 +78,4 @@ cd code/
 cargo build-bpf
 
 # deploy program
-solana program deploy ./target/deploy/quantix42.so
+solana program deploy ./target/deploy/quantix.so

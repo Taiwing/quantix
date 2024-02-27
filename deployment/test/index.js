@@ -17,7 +17,7 @@ function createKeypairFromFile(path) {
 // Loading these from local files for development (TODO: move to environment variables)
 const connection = new Connection(`http://localhost:8899`, 'confirmed');
 const payer = createKeypairFromFile('../../local.json');
-const program = createKeypairFromFile('../../code/target/deploy/quantix42-keypair.json');
+const program = createKeypairFromFile('../../code/target/deploy/quantix-keypair.json');
 
 // We set up our instruction first.
 let ix = new TransactionInstruction({
