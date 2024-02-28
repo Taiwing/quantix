@@ -15,12 +15,6 @@ shift and bring value to people.
 ```shell
 # clone it
 git clone https://github.com/Taiwing/quantix
-
-# run a local validator (if not using a remote like devnet)
-solana-test-validator -r
-
-# deploy quantix token
-./deploy.bash
 ```
 
 ## Usage

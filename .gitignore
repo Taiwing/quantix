@@ -1,5 +1,1 @@
 *.swp
-target/
-test-ledger/
-*.json
-node_modules/
