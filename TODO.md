@@ -1,5 +1,6 @@
 --- TODO ---
 
-- use token-2022 with a transfer hook
-- add quantum simulator
+- build ethereum smart contract in Solidity
+- create quantum simulator
+- use it for the transfer functions
 - write whitepaper when the basic structure works
